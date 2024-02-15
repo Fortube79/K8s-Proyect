@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       role: backend
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: blocnotas/backend
+        image: fortube/backend
         ports:
         - containerPort: 3800
