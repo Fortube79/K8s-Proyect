@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: blocnotas/frontend
+        image: fortube/frontend
         ports:
         - containerPort: 80
